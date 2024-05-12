@@ -81,7 +81,8 @@ def solve(matrixA, matrixB):
             sum += matrixR[i][k]*matrixX[k]
         matrixX[i] = round(matrixZ[i] - sum, 9)
 
-    print(matrixX)
+    for i in range(n):
+        print(f'X{i+1} = {matrixX[i]}')
 
 
 
